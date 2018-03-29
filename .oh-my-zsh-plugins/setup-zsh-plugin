@@ -1,0 +1,4 @@
+#!/bin/bash
+ln -sf ../../../.oh-my-zsh-plugins/zsh-autosuggestions ../.oh-my-zsh/custom/plugins/
+ln -sf ../../../.oh-my-zsh-plugins/zsh-output-highlighting ../.oh-my-zsh/custom/plugins/
+ln -sf ../../../.oh-my-zsh-plugins/zsh-syntax-highlighting ../.oh-my-zsh/custom/plugins/
