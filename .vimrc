@@ -52,24 +52,30 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"##### SETUP themes, colors and style
 syntax on
 colorscheme wombat
+"setup escape sequence for vim though it is not needed 
+"for certain distros but including it does no harm
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 highlight Comment cterm=italic gui=italic
-set clipboard=unnamedplus
 
-" setup vim_airline 
+"##### SETUP vim_airline 
 let g:airline_powerline_fonts=1
 let g:airline_theme='luna'
-set t_Co=256	"needed for colors in airline do not know why it is needed even after the TERM=xterm-256color
-" finished setup vim_airline
+"needed for colors in airline do not know why 
+"it is needed even after the TERM=xterm-256color
+set t_Co=256	
 
-" setup ctrlp
+"##### SETUP ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files=0
 let g:ctrlp_working_path_mode=0
-" finished setup ctrlp
 
+"##### SETUP extra stuff
+set clipboard=unnamedplus
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 " Force saving files that require root permission 
 cnoremap w!! w !sudo dd of=% 2>/dev/null
