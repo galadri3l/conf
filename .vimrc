@@ -31,6 +31,8 @@ Plugin 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
+" Add colorscheme git repo as few themes are not found in certain distros.
+Plugin 'flazz/vim-colorschemes'
 "Plugin 'valloric/youcompleteme'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

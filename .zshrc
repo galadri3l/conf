@@ -84,8 +84,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # custom code goes here
+if [ -f ~/.zsh_custom ]; then
+    source ~/.zsh_custom
+fi
+
+#Global Aliases
 alias yoump3="youtube-dl -x --audio-format mp3"
 alias em="emacs -nw"
 alias vi="vim"
 alias aria2c="aria2c -x 16"
 #export TERM=rxvt-256color
+
