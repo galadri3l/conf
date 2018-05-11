@@ -77,5 +77,7 @@ let g:ctrlp_working_path_mode=0
 "##### SETUP extra stuff
 set clipboard=unnamedplus
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
+" If you get wierd characters in vim uncomment see v:termresponse
+set t_RV=
 " Force saving files that require root permission 
 cnoremap w!! w !sudo dd of=% 2>/dev/null
