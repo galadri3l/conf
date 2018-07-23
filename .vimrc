@@ -64,6 +64,7 @@ highlight Comment cterm=italic gui=italic
 "##### SETUP vim_airline 
 let g:airline_powerline_fonts=1
 let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled = 1
 "needed for colors in airline do not know why 
 "it is needed even after the TERM=xterm-256color
 set t_Co=256	
@@ -71,7 +72,9 @@ set t_Co=256
 "##### SETUP ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+" Set no max file limit
 let g:ctrlp_max_files=0
+" Search from current directory instead of project root
 let g:ctrlp_working_path_mode=0
 
 "##### SETUP extra stuff
