@@ -1,0 +1,5 @@
+#unlimited bash history set to blank for centos/rhel and -1 for ubuntu
+HISTFILESIZE=
+HISTSIZE=
+
+export PATH=~/opt/node-v8.11.3/bin:$PATH
