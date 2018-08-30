@@ -76,11 +76,25 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files=0
 " Search from current directory instead of project root
 let g:ctrlp_working_path_mode=0
+let g:ctrlp_show_hidden=1
 
 "##### SETUP extra stuff
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 " If you get wierd characters in vim uncomment see v:termresponse
 set t_RV=
 " Force saving files that require root permission 
 cnoremap w!! w !sudo dd of=% 2>/dev/null
+
+"##### SETUP gvim
+if has('gui_running')
+  "set font from edit->select font and execute
+  ":set guifont? to see the name of the font
+  "now in vimrc write a line as below where you
+  "get the from name from the above command
+  set guifont=Hack\ 12
+  set number
+  set guioptions-=T    "no toolbar
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
+endif
